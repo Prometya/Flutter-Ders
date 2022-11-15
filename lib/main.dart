@@ -38,7 +38,7 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Center(
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.end,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Container(width: 100, height: 100, color: Colors.red),
             Container(width: 50, height: 50, color: Colors.amber[600]),
@@ -48,6 +48,18 @@ class _MyHomePageState extends State<MyHomePage> {
               width: 75,
               height: 54,
               color: Colors.black,
+            ),
+            FloatingActionButton(
+              backgroundColor: Colors.pinkAccent,
+              elevation: 0,
+              heroTag: const Text('btn1'),
+              tooltip: 'Aumentar',
+              child: const Icon(
+                Icons.add,
+                color: Colors.black,
+                size: 30,
+              ),
+              onPressed: () {},
             ),
           ],
         ),
