@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:untitled1/100/text_learn.dart';
+import 'package:untitled1/100/container_sized_box_learn.dart';
 
 //Veli babaaaaaa BÜYÜKSÜN :)
 //Bu sefer olacak İnşallah. Sen beni bıraksan da ben seni bu sefer
@@ -14,12 +14,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Flutter Dersler',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: TextLearnView(),
+      home: ContainerSizedBoxLearnView(),
     );
   }
 }
