@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+//Veli babaaaaaa BÜYÜKSÜN :)
+//Bu sefer olacak İnşallah. Sen beni bıraksan da ben seni bu sefer bırakmayacağım FLutter
 void main() {
   runApp(const MyApp());
 }
