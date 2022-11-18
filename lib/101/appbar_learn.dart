@@ -9,9 +9,7 @@ class AppBarView extends StatelessWidget {
       appBar: AppBar(
         title: Text('Merhaba'),
       ),
-      body: Column(
-          ()
-      ),
+      body: Column(),
     );
   }
 }
