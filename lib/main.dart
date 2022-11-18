@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:untitled1/101/appbar_learn.dart';
+import 'package:flutter/services.dart';
+import 'package:untitled1/101/icon_learn.dart';
 
 //Veli babaaaaaa BÜYÜKSÜN :)
 //Bu sefer olacak İnşallah. Sen beni bıraksan da ben seni bu sefer
@@ -16,11 +17,22 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Dersler',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData.dark(),
+      theme: ThemeData.dark().copyWith(
+        appBarTheme: AppBarTheme(
+          toolbarHeight: 50,
+          backgroundColor: Colors.red,
+          systemOverlayStyle: SystemUiOverlayStyle
+              .light, // burası var ya burası çok ince nokta. Appbar üzerinden status barın rengini değiştiriyorsun
+          elevation:
+              0, // sıfır atayınca body ve appbar birmiş gibi gözükür. Ama color transparent olacak tabii ki
+          centerTitle:
+              true, // Bunu true yapmazsan androidde soldan başlar, ios da ortadan başlar
+        ),
+      ),
       // ThemeData(
       //   primarySwatch: Colors.blue,
       // ),
-      home: AppBarView(),
+      home: IconLearnView(),
     );
   }
 }
