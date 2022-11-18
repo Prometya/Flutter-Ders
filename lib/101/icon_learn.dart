@@ -34,5 +34,6 @@ class IconSizeTanimla {
 }
 
 class IconColorTanimla {
-  final Color iconColorFruze = Color(0xffED617A);
+  final Color iconColorFruze =
+      Color(0xffED617A); // HATIRLATMA : Custon renk için 0xff koy başına
 }

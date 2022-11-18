@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:untitled1/101/icon_learn.dart';
+import 'package:untitled1/101/color_learn.dart';
 
 //Veli babaaaaaa BÜYÜKSÜN :)
 //Bu sefer olacak İnşallah. Sen beni bıraksan da ben seni bu sefer
@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
       // ThemeData(
       //   primarySwatch: Colors.blue,
       // ),
-      home: IconLearnView(),
+      home: ColorLearnView(),
     );
   }
 }
