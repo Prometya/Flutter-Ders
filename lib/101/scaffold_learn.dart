@@ -14,7 +14,25 @@ class ScaffoldLearnView extends StatelessWidget {
       backgroundColor: Colors.red,
       floatingActionButton: FloatingActionButton(
         hoverColor: Colors.white,
-        onPressed: () {},
+        onPressed: () {
+          showModalBottomSheet(
+            context: context,
+            builder: (context) {
+              final theme = Theme.of(context);
+              return Wrap(children: [
+                ListTile(title: Text("Wrap Tile 1")),
+                ListTile(title: Text("Wrap Tile 1")),
+                Center(
+                  child: IconButton(
+                    onPressed: () {},
+                    icon: Icon(Icons.add_circle),
+                  ),
+                )
+              ]);
+            },
+          );
+        },
+        child: Icon(Icons.access_alarm_outlined, size: 45),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       bottomNavigationBar: BottomNavigationBar(

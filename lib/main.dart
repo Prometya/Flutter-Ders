@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:untitled1/100/scaffold_learn.dart';
+import 'package:untitled1/101/button_learn.dart';
 
 //Veli babaaaaaa BÜYÜKSÜN :)
 //Bu sefer olacak İnşallah. Sen beni bıraksan da ben seni bu sefer
@@ -16,10 +16,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Dersler',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: ScaffoldLearnView(),
+      theme: ThemeData.dark(),
+      // ThemeData(
+      //   primarySwatch: Colors.blue,
+      // ),
+      home: ButtonLearnView(),
     );
   }
 }
