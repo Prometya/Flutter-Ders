@@ -20,26 +20,58 @@ class NoteDemoTekrar extends StatelessWidget {
               padding: ProjePadding.vertical,
               child: BaslikMetin(metinBaslik: metinBaslik),
             ),
-            BaslikMetin(
-              metinBaslik: metinAciklama, // boyut küçült ve koyuluk iptal et
-            ),
+            metinAciklamaWidget(metinAciklama: metinAciklama),
             Spacer(),
             ProjeButton(elevatedButtonMetin: elevatedButtonMetin),
             TextButton(
                 onPressed: () {},
-                child: Text(
-                  importMetin,
-                  style: Theme.of(context)
-                      .textTheme
-                      .headline6
-                      ?.copyWith(color: Colors.blue[400]),
-                )),
+                child: ImportButtonText(importMetin: importMetin)),
             SizedBox(
               height: 50,
             )
           ],
         ),
       ),
+    );
+  }
+}
+
+class metinAciklamaWidget extends StatelessWidget {
+  const metinAciklamaWidget({
+    Key? key,
+    required this.metinAciklama,
+  }) : super(key: key);
+
+  final String metinAciklama;
+
+  @override
+  Widget build(BuildContext context) {
+    return Text(
+      metinAciklama,
+      style: Theme.of(context)
+          .textTheme
+          .subtitle1
+          ?.copyWith(color: Colors.black87),
+    );
+  }
+}
+
+class ImportButtonText extends StatelessWidget {
+  const ImportButtonText({
+    Key? key,
+    required this.importMetin,
+  }) : super(key: key);
+
+  final String importMetin;
+
+  @override
+  Widget build(BuildContext context) {
+    return Text(
+      importMetin,
+      style: Theme.of(context)
+          .textTheme
+          .headline6
+          ?.copyWith(color: Colors.blue[400]),
     );
   }
 }
@@ -54,21 +86,21 @@ class ProjeButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: 350,
-      height: 75,
+    return SizedBox(
+      height: ButtonHeights.buttonNormalHeight,
       child: ElevatedButton(
           onPressed: () {},
           style: ElevatedButton.styleFrom(
               shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(25))),
-          child: Text(
-            elevatedButtonMetin,
-            style: Theme.of(context)
-                .textTheme
-                .headline5
-                ?.copyWith(), // bir şey ile sarınca tam ekrana yayılıyor
-            textAlign: TextAlign.center,
+                  borderRadius: BorderRadius.circular(
+                      25))), //Burayı tekrar et oturmamış!!!
+          child: Center(
+            child: Text(
+              // Text e center verince sayfaya yayılır kaplar. Çok güzel oldu
+              elevatedButtonMetin,
+              style: Theme.of(context).textTheme.headline5?.copyWith(),
+              textAlign: TextAlign.center,
+            ),
           )),
     );
   }
@@ -97,4 +129,8 @@ class BaslikMetin extends StatelessWidget {
           ?.copyWith(color: Colors.black, fontWeight: FontWeight.w600),
     );
   }
+}
+
+class ButtonHeights {
+  static const double buttonNormalHeight = 50;
 }
