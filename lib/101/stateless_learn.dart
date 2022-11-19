@@ -21,8 +21,26 @@ class StatelessLearnView extends StatelessWidget {
             ErayTitleTextWidget(
               metin: "4950",
             ),
+            ErayContainer()
           ],
         ));
+  }
+}
+
+class ErayContainer extends StatelessWidget {
+  const ErayContainer({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      color: Colors.deepPurple,
+      child: SizedBox(
+        height: 400,
+        width: 400,
+      ),
+    );
   }
 }
 

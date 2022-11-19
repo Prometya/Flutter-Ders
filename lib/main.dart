@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:untitled1/101/stateless_learn.dart';
+import 'package:untitled1/demos/note_demo.dart';
 
 //Veli babaaaaaa BÜYÜKSÜN :)
 //Bu sefer olacak İnşallah. Sen beni bıraksan da ben seni bu sefer
@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData.dark().copyWith(
         appBarTheme: AppBarTheme(
           toolbarHeight: 50,
-          backgroundColor: Colors.red,
+          backgroundColor: Colors.transparent,
           systemOverlayStyle: SystemUiOverlayStyle
               .light, // burası var ya burası çok ince nokta. Appbar üzerinden status barın rengini değiştiriyorsun
           elevation:
@@ -28,11 +28,12 @@ class MyApp extends StatelessWidget {
           centerTitle:
               true, // Bunu true yapmazsan androidde soldan başlar, ios da ortadan başlar
         ),
+        scaffoldBackgroundColor: Colors.blue[50],
       ),
       // ThemeData(
       //   primarySwatch: Colors.blue,
       // ),
-      home: StatelessLearnView(),
+      home: NoteDemo(),
     );
   }
 }
