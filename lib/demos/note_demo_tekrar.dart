@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:untitled1/101/custom_widget.dart';
 import 'package:untitled1/101/image_learn.dart';
 
 class NoteDemoTekrar extends StatelessWidget {
@@ -26,6 +27,10 @@ class NoteDemoTekrar extends StatelessWidget {
             TextButton(
                 onPressed: () {},
                 child: ImportButtonText(importMetin: importMetin)),
+            CustomFootButton(
+              title: metinBaslik,
+              onPressed: () {},
+            ),
             SizedBox(
               height: 50,
             )
