@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:untitled1/101/statefull_lifecycle.dart';
+import 'package:untitled1/101/statefull_lifecycle_chatgpt.dart';
 
 import '101/statefull_learn.dart';
 
@@ -37,7 +39,7 @@ class MyApp extends StatelessWidget {
       // ThemeData(
       //   primarySwatch: Colors.blue,
       // ),
-      home: StatefullLearnView(),
+      home: ChatGPT_statefull_lifecycle(),
     );
   }
 }
