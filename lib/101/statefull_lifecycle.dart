@@ -64,7 +64,7 @@ class _StatefullLifeCycleLearnState extends State<StatefullLifeCycleLearn> {
           : ElevatedButton(
           onPressed: () {
             setState(() {
-              _message = "a";
+              _message = "aaa";
             });
           },
           child: Text(_message)),
