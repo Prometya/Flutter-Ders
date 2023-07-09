@@ -22,10 +22,10 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Dersler',
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark().copyWith(
-        listTileTheme: ListTileThemeData(
+        listTileTheme: const ListTileThemeData(
             contentPadding: EdgeInsets
                 .zero), // Burada projedeki tüm ListTile ların contentpaddingni sıfır yaptık
-        appBarTheme: AppBarTheme(
+        appBarTheme: const AppBarTheme(
           toolbarHeight: 50,
           backgroundColor: Colors.transparent,
           systemOverlayStyle: SystemUiOverlayStyle
@@ -40,7 +40,7 @@ class MyApp extends StatelessWidget {
       // ThemeData(
       //   primarySwatch: Colors.blue,
       // ),
-      home: TextFieldLearn(),
+      home: const StatefullLearnView(),
     );
   }
 }
