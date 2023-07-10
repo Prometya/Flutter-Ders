@@ -1,10 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:untitled1/101/statefull_lifecycle.dart';
-import 'package:untitled1/101/statefull_lifecycle_chatgpt.dart';
-import 'package:untitled1/101/textfield_learn.dart';
-
-import '101/statefull_learn.dart';
 
 //Veli babaaaaaa BÜYÜKSÜN :)
 //Bu sefer olacak İnşallah. Sen beni bıraksan da ben seni bu sefer
@@ -38,13 +33,14 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: Colors.blueGrey,
       ),
       // ThemeData(
-      //   primarySwatch: Colors.blue,
+      //   primarySwatch: Colors.red,
       // ),
-      home: const StatefullLearnView(),
+      home: const TextLearn
     );
   }
 }
-
+//deneme github için eklendi.
+//TODO: Branch çalışması için bu not konuldu.
 // class MyHomePage extends StatefulWidget {
 //   const MyHomePage({super.key, required this.title});
 //   final String title;
