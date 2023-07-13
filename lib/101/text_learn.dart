@@ -40,7 +40,7 @@ class TextLearnView extends StatelessWidget {
           Text(userName ??
               ''), // BURADA EĞER NULL OLUP PATLAR DİYE CHECK EDİP BOŞLUK KOYDUK
           Text(keys.welcome),
-          Text(data)
+          Text('data'),
           CupertinoButton(child: Text(keys.baslik), onPressed: () {}),
           TextButton(onPressed: () {}, child: Text(keys.welcome))
         ],

@@ -10,7 +10,7 @@ class ListTileLearnView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('List Tile'),
+          title: const Text('List Tile'),
         ),
         body: Column(
           children: <Widget>[
@@ -23,8 +23,8 @@ class ListTileLearnView extends StatelessWidget {
                   title: RandomImageGenerator(),
                   //contentPadding: EdgeInsets.zero,
                   subtitle: Text(_tileSubTitle),
-                  leading: Padding(
-                    padding: const EdgeInsets.only(top: 45),
+                  leading: const Padding(
+                    padding: EdgeInsets.only(top: 45),
                     child: Icon(
                       Icons.beenhere_outlined,
                       size: 45,
@@ -33,8 +33,8 @@ class ListTileLearnView extends StatelessWidget {
                   trailing: Container(
                       // Eğer bir kompenentin nereleri kapladığını bilmiyorsan Container ile sarmala ve Colors.red ver.
                       color: Colors.red,
-                      child: Padding(
-                        padding: const EdgeInsets.only(top: 45),
+                      child: const Padding(
+                        padding: EdgeInsets.only(top: 45),
                         child:
                             SizedBox(child: Icon(Icons.chevron_right_outlined)),
                       )),

@@ -6,11 +6,11 @@ class ScaffoldLearnView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Scaffold Learn")),
+      appBar: AppBar(title: const Text("Scaffold Learn")),
       drawer: Drawer(
         key: key,
       ),
-      body: Column(),
+      body: const Column(),
       backgroundColor: Colors.red,
       floatingActionButton: FloatingActionButton(
         hoverColor: Colors.white,
@@ -20,24 +20,24 @@ class ScaffoldLearnView extends StatelessWidget {
             builder: (context) {
               final theme = Theme.of(context);
               return Wrap(children: [
-                ListTile(title: Text("Wrap Tile 1")),
-                ListTile(title: Text("Wrap Tile 1")),
+                const ListTile(title: Text("Wrap Tile 1")),
+                const ListTile(title: Text("Wrap Tile 1")),
                 Center(
                   child: IconButton(
                     onPressed: () {},
-                    icon: Icon(Icons.add_circle),
+                    icon: const Icon(Icons.add_circle),
                   ),
                 )
               ]);
             },
           );
         },
-        child: Icon(Icons.access_alarm_outlined, size: 45),
+        child: const Icon(Icons.access_alarm_outlined, size: 45),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: Colors.deepPurple,
-        items: [
+        items: const [
           BottomNavigationBarItem(icon: Icon(Icons.abc_sharp), label: "a"),
           BottomNavigationBarItem(icon: Icon(Icons.ac_unit_sharp), label: "b")
         ],

@@ -19,8 +19,11 @@ class _TextLearnViewState extends State<TextLearnView> {
         maxLines: 2,
         overflow: TextOverflow.ellipsis,
         selectionColor: Colors.amber,
-        style: Theme.of(context).textTheme.headlineLarge?.copyWith(color: Colors.amber[900]), 
-        //TODO: Bu aşağısı ile theme of aynı anda kullanılamaz.
+        style: Theme.of(context)
+            .textTheme
+            .headlineLarge
+            ?.copyWith(color: Colors.amber[900]),
+        //TODO: Bu aşağısı (class ile verileri ayırdığımız yer)ile theme of aynı anda kullanılamaz.
         //ProjectStyles.welcomeStyle,
       ),
     );
@@ -32,5 +35,4 @@ class ProjectStyles {
       color: Colors.amber,
       fontSize: 10.0,
       decoration: TextDecoration.underline);
-  static Text welcomeTextStyle = ,
 }
