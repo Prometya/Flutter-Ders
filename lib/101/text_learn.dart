@@ -34,12 +34,13 @@ class TextLearnView extends StatelessWidget {
             textAlign: TextAlign.right,
             style: Theme.of(context)
                 .textTheme
-                .headline5!
+                .headlineSmall!
                 .copyWith(color: ProjectColor.projeLarge),
           ),
           Text(userName ??
               ''), // BURADA EĞER NULL OLUP PATLAR DİYE CHECK EDİP BOŞLUK KOYDUK
           Text(keys.welcome),
+          Text(data)
           CupertinoButton(child: Text(keys.baslik), onPressed: () {}),
           TextButton(onPressed: () {}, child: Text(keys.welcome))
         ],
