@@ -24,11 +24,12 @@ class ContainerSizedBoxView2 extends StatelessWidget {
                     borderRadius: BorderRadius.circular(25),
                     boxShadow: const [
                       BoxShadow(
-                          blurStyle: BlurStyle.solid,
-                          offset: Offset(15, 15),
-                          color: Colors.black45,
-                          blurRadius: 20,
-                          //spreadRadius: 3)
+                        blurStyle: BlurStyle.solid,
+                        offset: Offset(15, 15),
+                        color: Colors.black45,
+                        blurRadius: 20,
+                      )
+                      //spreadRadius: 3)
                     ]),
                 margin: const EdgeInsets.all(10),
                 padding: const EdgeInsets.all(10),
@@ -39,7 +40,10 @@ class ContainerSizedBoxView2 extends StatelessWidget {
                         color: Colors.white,
                         fontSize: 20.0,
                         fontWeight: FontWeight.bold,
-                        decoration: TextDecoration.underline),
+                        decoration: TextDecoration.underline,
+                        shadows: [
+                          Shadow(color: Colors.red, offset: Offset(5, 5)),
+                        ]),
                   ),
                 ),
               ),
