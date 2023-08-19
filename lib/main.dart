@@ -41,8 +41,8 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-//deneme github için eklendi.
-//TODO: Branch çalışması için bu not konuldu.
+//deneme github için eklendi. Test
+//TODO: Branch çalışması için bu not konuldu. 
 // class MyHomePage extends StatefulWidget {
 //   const MyHomePage({super.key, required this.title});
 //   final String title;
