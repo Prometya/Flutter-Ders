@@ -8,7 +8,8 @@ import 'package:flutter/material.dart';
 
 class TextLearnView extends StatelessWidget {
   TextLearnView({Key? key, this.userName}) : super(key: key);
-  final String name = "Eray";
+  final String name = "Eray Bey";
+  
   final String? userName;
   final ProjectKeys keys = ProjectKeys();
   @override

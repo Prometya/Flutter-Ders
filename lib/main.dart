@@ -31,6 +31,7 @@ class MyApp extends StatelessWidget {
               0, // sıfır atayınca body ve appbar birmiş gibi gözükür. Ama color transparent olacak tabii ki
           centerTitle:
               true, // Bunu true yapmazsan androidde soldan başlar, ios da ortadan başlar
+          
         ),
         scaffoldBackgroundColor: Colors.blueGrey,
       ),
