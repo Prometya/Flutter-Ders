@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class ContainerSizedBoxView2 extends StatelessWidget {
   const ContainerSizedBoxView2({Key? key}) : super(key: key);
-  final String boxMesaj = 'Box Burası BOX!!';
+  final String boxMesaj = 'Box Burasıdır BOX!!';
 
   @override
   Widget build(BuildContext context) {
