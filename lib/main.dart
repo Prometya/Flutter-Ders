@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:untitled1/101/container_sized_box_learn.dart';
 import 'package:untitled1/102/container_sized_box_view.dart';
 
 //Veli babaaaaaa BÜYÜKSÜN :)
