@@ -30,6 +30,7 @@ class MyApp extends StatelessWidget {
               0, // sıfır atayınca body ve appbar birmiş gibi gözükür. Ama color transparent olacak tabii ki
           centerTitle:
               true, // Bunu true yapmazsan androidde soldan başlar, ios da ortadan başlar
+          
         ),
         scaffoldBackgroundColor: Colors.blueGrey,
       ),
@@ -40,8 +41,8 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-//deneme github için eklendi.
-//TODO: Branch çalışması için bu not konuldu.
+//deneme github için eklendi. Test
+//TODO: Branch çalışması için bu not konuldu. 
 // class MyHomePage extends StatefulWidget {
 //   const MyHomePage({super.key, required this.title});
 //   final String title;
